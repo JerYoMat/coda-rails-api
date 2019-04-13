@@ -8,6 +8,6 @@ class CreateCompanies < ActiveRecord::Migration[5.2]
       t.belongs_to :industry 
       t.timestamps
     end
-    add_index :companies, :companyname, unique: true 
+    add_index :companies, :primarysymbol, unique: true 
   end
 end
