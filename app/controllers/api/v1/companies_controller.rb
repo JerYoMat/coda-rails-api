@@ -1,6 +1,6 @@
 class Api::V1::CompaniesController < ApplicationController
   def index 
-    @companies = Company.all 
+    @companies = Company.first(100) 
     render json: @companies 
   end 
 
