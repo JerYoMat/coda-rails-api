@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do 
     namespace :v1 do 
-      root '/', to: 'companies#index'
+     
       get '/companies', to: 'companies#index'
       resource :users, only: [:create, :update, :destroy]
       resource :favorites, only: [:create, :destroy]
